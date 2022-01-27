@@ -15,9 +15,8 @@ namespace Bot
 
     public class Womens_Long_CourseContext : DbContext
     {
-        private const string connectionString = @"Data Source =DESKTOP-6ENFBPN\SQLEXPRESS01;Initial Catalog = BestResults;;Integrated Security=True";
 
-        public Womens_Long_CourseContext() : base(connectionString)
+        public Womens_Long_CourseContext() : base("DefaultConnection")
         { }
 
         public DbSet<Womens_Long_Course> Womens_Long_Courses { get; set; }
